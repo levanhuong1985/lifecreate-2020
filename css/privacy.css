@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*==================================================================
+	Style setting
+===================================================================*/
+.sec-privacy {
+	background: #F2F2F2;
+	padding: 120px 0 100px;
+}
+.privacy {
+	background: #FFF;
+	padding: 80px;
+}
+.privacy > h3 {
+	border-left: 6px solid #EB0B1C;
+	font-size: 2.2rem;
+	font-weight: bold;
+	line-height: 1.4;
+	margin-bottom: 25px;
+	padding: 2px 0 0 20px;
+}
+.privacy > p {
+	margin-bottom: 65px;
+	padding-left: 10px;
+}
+.privacy > dl {
+	margin-bottom: 70px;
+	padding-left: 20px;
+}
+.privacy > dl > dt {
+	margin-bottom: 3px;
+}
+.privacy > dl > dd {
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1400px){
+	.privacy { padding: 40px; }
+}
+@media screen and (max-width: 767px){
+	.sec-privacy { padding: 60px 0 50px; }
+	.privacy { padding: 30px 15px; }
+	.privacy > h3 { font-size: 1.8rem; margin-bottom: 15px; padding: 0 0 0 10px; }
+	.privacy > p { margin-bottom: 30px; padding-left: 0; }
+	.privacy > dl { margin-bottom: 35px; padding-left: 10px; }
+}
+@media screen and (max-width: 320px){
+	.privacy > h3 { font-size: 1.6rem; }
+}

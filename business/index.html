@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="{[#SITE_DESCRIPTION#]}">
+<meta name="keywords" content="{[#SITE_KEYWORDS#]}">
+<meta name="format-detection" content="telephone=no">
+<title>[#SITE_TITLE#]}</title>
+<script type="text/javascript">
+	if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+		document.write('<meta name="viewport" content="width=device-width, initial-scale=1">');
+	}else{
+		document.write('<meta name="viewport" content="width=1400">');
+	}
+</script>
+<link rel="stylesheet" href="../css/normalize.css" media="all">
+<link rel="stylesheet" href="../css/style.css" media="all">
+<link rel="stylesheet" href="../css/business.css" media="all">
+<link rel="index contents" href="/" title="ホーム">
+</head>
+<body>
+	<header id="header">
+		<h1 id="logo"><a href="../"><img src="../imgs/common/logo.svg" alt="株式会社ライフクリエイト"></a></h1>
+		<nav id="gnav" class="pc-only">
+			<ul>
+				<li><a href="#sub-gnav-about" class="nav-item"><span class="en poppins">ABOUT US</span><span class="jp">ライフクリエイトを知る</span></a></li>
+				<li><a href="../business/" class="nav-item"><span class="en poppins">BUSINESS</span><span class="jp">仕事を知る</span></a></li>
+				<li><a href="#sub-gnav-recruit" class="nav-item"><span class="en poppins">RECRUIT</span><span class="jp">採用情報を知る</span></a></li>
+				<li><a href="../interview/" class="nav-item"><span class="en poppins">INTERVIEW</span><span class="jp">先輩インタビュー</span></a></li>
+			</ul>
+			<div class="btn-entry"><a href="../recruit/information.html" class="nav-item"><span class="en poppins">ENTRY</span><span class="jp">エントリー</span></a></div>
+			<div class="sub-gnav" id="sub-gnav-about">
+				<div class="sub-gnav-ttl">
+					<p><span class="en poppins">ABOUT US</span><span class="jp">ライフクリエイトを知る</span></p>
+				</div>
+				<div class="sub-gnav-items">
+					<ul>
+						<li><a href="../about/index.html" class="sub-nav-item">経営ビジョン</a></li>
+						<li><a href="../about/message.html" class="sub-nav-item">代表メッセージ</a></li>
+						<li><a href="../about/company.html" class="sub-nav-item">会社概要・沿革</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sub-gnav" id="sub-gnav-recruit">
+				<div class="sub-gnav-ttl">
+					<p><span class="en poppins">RECRUIT</span><span class="jp">採用情報を知る</span></p>
+				</div>
+				<div class="sub-gnav-items">
+					<ul>
+						<li><a href="../recruit/index.html" class="sub-nav-item">求める人物像</a></li>
+					</ul>
+					<p class="sub-ttl">求人情報一覧</p>
+					<ul>
+						<li><a href="../recruit/information.html" class="sub-nav-item">新卒採用</a></li>
+						<li><a href="../recruit/information.html" class="sub-nav-item">中途採用</a></li>
+						<li><a href="../recruit/information.html" class="sub-nav-item">アルバイト・パート</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="open-menu" class="sp-only">
+			<span>-</span>
+		</div>
+		<nav id="sp-nav" class="sp-only">
+			<div class="sp-nav-inner">
+				<ul class="main-nav">
+					<li>
+						<p><a href="javascript:void(0);" class="sp-nav-parent has-sub poppins">ABOUT</a></p>
+						<ul class="sp-nav-sub">
+							<li><a href="../about/" class="sp-nav-item">経営ビジョン</a></li>
+							<li><a href="../about/message.html" class="sp-nav-item">代表メッセージ</a></li>
+							<li><a href="../about/company.html" class="sp-nav-item">会社概要、沿革</a></li>
+						</ul>
+					</li>
+					<li>
+						<p><a href="javascript:void(0);" class="sp-nav-parent has-sub poppins">BUSINESS</a></p>
+						<ul class="sp-nav-sub">
+							<li><a href="../business/" class="sp-nav-item">事業紹介</a></li>
+							<li><a href="../business/future.html" class="sp-nav-item">これからのライフクリエイト</a></li>
+						</ul>
+					</li>
+					<li>
+						<p><a href="../interview/" class="sp-nav-parent poppins">INTERVIEW</a></p>
+					</li>
+					<li>
+						<p><a href="javascript:void(0);" class="sp-nav-parent has-sub poppins">RECRUIT</a></p>
+						<ul class="sp-nav-sub">
+							<li><a href="../recruit/" class="sp-nav-item">求める人物像</a></li>
+							<li><a href="../recruit/information.html" class="sp-nav-item">求人情報一覧</a></li>
+							<li><a href="../entry/" class="sp-nav-item">エントリーフォーム</a></li>
+						</ul>
+					</li>
+					<li>
+						<p><a href="../news/" class="sp-nav-parent poppins">NEWS</a></p>
+					</li>
+				</ul>
+				<ul class="other-nav">
+					<li><a href="../contact/" class="sp-nav-other">お問い合せ</a></li>
+					<li><a href="../privacy/" class="sp-nav-other">個人情報保護方針</a></li>
+					<li><a href="../training/" class="sp-nav-other">工具研修声募集</a></li>
+				</ul>
+				<p class="entry"><a href="../recruit/information.html"><span class="en poppins">ENTRY</span><span class="jp">エントリー</span></a></p>
+				<p class="close"><a href="javascript:void(0);" id="close-menu" class="poppins">CLOSE</a></p>
+			</div>
+		</nav>
+	</header><!-- #header -->
+
+	<section class="main-page">
+		<div class="main-ttl">
+			<h2 class="fadeup"><span class="en poppins">BUSINESS</span><span class="jp">仕事を知る</span></h2>
+		</div>
+		<figure><img src="../imgs/business/img_main.jpg" alt="BUSINESS 仕事を知る" class="imgfull"></figure>
+	</section><!-- .main-page -->
+
+	<main id="contents">
+		<section class="sec-business">
+			<h3 class="headline01 fadeup"><span class="en poppins">OUR BUSINESS</span><span class="jp">事業紹介</span></h3>
+			<div class="target">
+				<figure class="img fadeup"><img src="../imgs/business/img_business_01.jpg" alt="日本一の御用聞き会社を目指す！" class="imgfull"></figure>
+				<div class="info fadeup">
+					<h3 class="ttl noto">日本一の御用聞き会社を目指す！</h3>
+					<p>少子高齢化になっている現代社会において、どこに何を頼んでいいかわからない皆様が弊社に頼んでいただければ全て解決してあげられる(地域や社会に必要とされる)会社でありたいと思っています。<br>弊社では作業のなんでも屋の便利屋さんと、物のなんでも屋のリサイクルショップを融合したビジネスを『御用聞きビジネス』 ヒューマンライフサポートカンパニーと言っています。<br>この『御用聞きビジネス』で日本一を目指します！</p>
+				</div>
+			</div><!-- .target -->
+
+			<div class="business-wrap bg-gray">
+				<div class="business">
+					<div class="container">
+						<h4 class="ttl-intro fadeup">事業紹介</h4>
+						<ul class="list-business">
+							<li class="fadeup">
+								<figure class="img"><img src="../imgs/common/img_business_01.jpg" alt="エコプラス"></figure>
+								<div class="info matchHeight">
+									<p class="ttl">エコプラス</p>
+									<p class="txt">ブランド品・貴金属を<br class="sp-only">中心とした<br>総合リサイクルショップ事業</p>
+								</div>
+								<p><a href="#anc01" class="btn white poppins"><span>READ MORE</span><span class="arrow">&nbsp;</span></a></p>
+							</li>
+							<li class="fadeup">
+								<figure class="img"><img src="../imgs/common/img_business_02.jpg" alt="ハンズクラフト"></figure>
+								<div class="info matchHeight">
+									<p class="ttl">ハンズクラフト</p>
+									<p class="txt">工具・家電を中心とした<br>総合リサイクルショップ事業</p>
+								</div>
+								<p><a href="#anc02" class="btn white poppins"><span>READ MORE</span><span class="arrow">&nbsp;</span></a></p>
+							</li>
+							<li class="fadeup">
+								<figure class="img"><img src="../imgs/common/img_business_03.jpg" alt="株式会社ハンズクラフトライフサポート事業部"></figure>
+								<div class="info matchHeight">
+									<p class="ttl">株式会社ハンズクラフト<br>ライフサポート事業部</p>
+								</div>
+								<p><a href="#anc03" class="btn white poppins"><span>READ MORE</span><span class="arrow">&nbsp;</span></a></p>
+							</li>
+							<li class="fadeup">
+								<figure class="img"><img src="../imgs/common/img_business_04.jpg" alt="工具研修生募集"></figure>
+								<div class="info matchHeight">
+									<p class="ttl">工具研修生募集</p>
+									<p class="txt">工具の取扱・メンテナンスの<br>技能習得から販売・査定に<br class="sp-only">関する<br class="pc-only">ノウハウ教えます！</p>
+								</div>
+								<p><a href="../training" class="btn white poppins"><span>READ MORE</span><span class="arrow">&nbsp;</span></a></p>
+							</li>
+						</ul>
+					</div><!-- .container -->
+				</div><!-- .business -->
+				
+				<div class="business bg-white" id="anc01">
+					<div class="container">
+						<div class="business-main">
+							<div class="info fadeup">
+								<h4 class="ttl"><img src="../imgs/business/ttl_business_01.png" alt="エコプラス"></h4>
+								<p>総合リサイクルショップエコプラスはブランド品・貴金属・腕時計を中心にその他様々な商品も幅広く取り扱う、買取・販売・質を中心に展開する店舗です。<br>エルメス・ヴィトン・グッチなどの高級ブランド品や、ロレックス・オメガなどの高級腕時計を正確に鑑定可能な質の高い査定士が常駐する店舗です。</p>
+							</div>
+							<figure class="img"><img src="../imgs/business/img_business_02.jpg" alt="エコプラス" class="imgfull"></figure>
+						</div>
+						<ul class="list-stores">
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_03.jpg" alt="エコプラス小倉南店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">エコプラス小倉南店</p>
+									<p class="des">ブランド品・貴金属の他、家電・工具・お酒など、買取・販売も行う総合店舗</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒800-0257 福岡県北九州市小倉南区湯川1-2-13</p>
+									<p><span class="bold">TEL</span><a href="tel:093-932-6667">093-932-6667</a></p>
+									<p><span class="bold">FAX</span>093-932-6660</p>
+									<p><span class="bold">営業時間</span>10：00～20：00</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_04.jpg" alt="エコプラス小倉北店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">エコプラス小倉北店</p>
+									<p class="des">買い取りを中心とした小規模店舗</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒802-0065 福岡県北九州市小倉北区三萩野1-1-12</p>
+									<p><span class="bold">TEL</span><a href="tel:093-932-0777">093-932-0777</a></p>
+									<p><span class="bold">FAX</span>093-932-0555</p>
+									<p><span class="bold">営業時間</span>10：00～20：00</p>
+									<p><span class="bold">定休日</span>水曜日（第2水曜日を除く）</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_05.jpg" alt="エコプラス門司店　（休店中）" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">エコプラス門司店　（休店中）</p>
+									<p class="des">買取・販売も行う総合小型店舗</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒800-0024 福岡県北九州市門司区大里戸ノ上1-1-1</p>
+									<p><span class="bold">TEL</span><a href="tel:093-372-7221">093-372-7221</a></p>
+									<p><span class="bold">FAX</span>093-372-7223</p>
+									<p><span class="bold">営業時間</span>10：00～20：00</p>
+									<p><span class="bold">定休日</span>水曜日</p>
+								</div>
+							</li>
+						</ul>
+					</div><!-- .container -->
+				</div><!-- .business -->
+
+				<div class="business" id="anc02">
+					<div class="container">
+						<div class="business-main">
+							<div class="info fadeup">
+								<h4 class="ttl"><img src="../imgs/business/ttl_business_02.png" alt="ハンズクラフト"></h4>
+								<p>ハンズクラフトは工具専門でありながら、総合リサイクルと家電専門館を店舗に構える他にはない事業形態です。<br>工具・家電の買い取り・販売は地域一番店で、店内中古在庫量も県下NO.1です。<br>
+								工具・家電以外のリサイクル品も取り扱ってます。</p>
+							</div>
+							<figure class="img"><img src="../imgs/business/img_business_06.jpg" alt="ハンズクラフト" class="imgfull"></figure>
+						</div>
+						<ul class="list-stores">
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_07.jpg" alt="ハンズクラフト戸畑本店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">ハンズクラフト戸畑本店</p>
+									<p class="des">工具を中心としたハンズクラフト1号店舗</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒804-0021 福岡県北九州市戸畑区一枝4-12-31</p>
+									<p><span class="bold">TEL</span><a href="tel:093-871-6760">093-871-6760</a></p>
+									<p><span class="bold">FAX</span>093-871-6761</p>
+									<p><span class="bold">営業時間</span>10：00～20：00</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_08.jpg" alt="ハンズクラフト小倉南店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">ハンズクラフト小倉南店</p>
+									<p class="des">工具・家電・家具など大型商品も多数取り扱う大規模店舗</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒800-0206 福岡県北九州市小倉南区葛原東1-1-28</p>
+									<p><span class="bold">TEL</span><a href="tel:093-474-3500">093-474-3500</a></p>
+									<p><span class="bold">FAX</span>093-474-3501</p>
+									<p><span class="bold">営業時間</span>10：00～20：00</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_09.jpg" alt="ハンズクラフト八幡西店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">ハンズクラフト八幡西店</p>
+									<p class="des">工具・家電のみならず、ブランド品やお酒などにも強い、中型店舗</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒807-0806 福岡県北九州市八幡西区御開3-31-27</p>
+									<p><span class="bold">TEL</span><a href="tel:093-693-3570">093-693-3570</a></p>
+									<p><span class="bold">FAX</span>093-693-3571</p>
+									<p><span class="bold">営業時間</span>10：00～20：00</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_10.jpg" alt="ハンズクラフト下関店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">ハンズクラフト下関店</p>
+									<p class="des">工具を中心とした農機具に強い、山口県進出1号店舗</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒751-0802 山口県下関市勝谷新町1-10-11</p>
+									<p><span class="bold">TEL</span><a href="tel:083-263-6601">083-263-6601</a></p>
+									<p><span class="bold">FAX</span>083-263-6602</p>
+									<p><span class="bold">営業時間</span>10：00～20：00</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_11.jpg" alt="ハンズクラフト博多店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">ハンズクラフト博多店</p>
+									<p class="des">福岡市進出1号拠点</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒812-0008 福岡県福岡市博多区東光2-3-23</p>
+									<p><span class="bold">TEL</span><a href="tel:092-477-5556">092-477-5556</a></p>
+									<p><span class="bold">FAX</span>092-477-5559</p>
+									<p><span class="bold">営業時間</span>10：00～20：00</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_12.jpg" alt="ハンズクラフト福岡インター店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">ハンズクラフト福岡インター店</p>
+									<p class="des">福岡市進出2号拠点</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒811-2312 福岡県糟屋郡粕屋町戸原838₋1</p>
+									<p><span class="bold">TEL</span><a href="tel:092-624-5800">092-624-5800</a></p>
+									<p><span class="bold">FAX</span>092-624-5801</p>
+									<p><span class="bold">営業時間</span>10：00～19：30</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_13.jpg" alt="ハンズクラフト宜野湾店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">ハンズクラフト宜野湾店</p>
+									<p class="des">沖縄県進出初店舗</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒901-2214 沖縄県宜野湾市我如古448</p>
+									<p><span class="bold">TEL</span><a href="tel:098-942-2780">098-942-2780</a></p>
+									<p><span class="bold">FAX</span>098-942-2783</p>
+									<p><span class="bold">営業時間</span>10：00～20：00</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+						</ul>
+					</div><!-- .container -->
+				</div><!-- .business -->
+
+				<div class="business bg-white" id="anc03">
+					<div class="container">
+						<div class="business-main">
+							<div class="info fadeup">
+								<h4 class="ttl"><img src="../imgs/business/ttl_business_03.png" alt="株式会社ハンズクラフトライフサポート事業部"></h4>
+								<p>プロの便利屋ライフサポートは地域の皆様のお困り事を解決し、快適で、安心して暮らしていける地域づくりを目指しています。<br>高度な技術・スピード対応・地域密着・誠心誠意・まごころサービスをモットーにお客様に満足頂けるよう努力いたします。</p>
+							</div>
+							<figure class="img"><img src="../imgs/business/img_business_14.jpg" alt="株式会社ハンズクラフトライフサポート事業部" class="imgfull"></figure>
+						</div>
+						<ul class="list-stores">
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_15.jpg" alt="戸畑本店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">戸畑本店</p>
+									<p class="des">便利業1号拠点</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒804-0021 福岡県北九州市戸畑区一枝4-12-31</p>
+									<p><span class="bold">TEL</span><a href="tel:093-871-6760">093-871-6760</a></p>
+									<p><span class="bold">FAX</span>093-871-6761</p>
+									<p><span class="bold">営業時間</span>10：00～20：00</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_16.jpg" alt="小倉南店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">小倉南店</p>
+									<p class="des">小倉南区拠点</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒800-0206 福岡県北九州市小倉南区葛原東1-1-28</p>
+									<p><span class="bold">TEL</span><a href="tel:0120-771-185">0120-771-185</a></p>
+									<p><span class="bold">FAX</span>093-474-3501</p>
+									<p><span class="bold">営業時間</span>10：00～20：00</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_17.jpg" alt="八幡西店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">八幡西店</p>
+									<p class="des">八幡西区拠点</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒807-0806 福岡県北九州市八幡西区御開3-31-27</p>
+									<p><span class="bold">TEL</span><a href="tel:0120-771-185">0120-771-185</a></p>
+									<p><span class="bold">FAX</span>093-693-3571</p>
+									<p><span class="bold">営業時間</span>10：00～18：00</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_18.jpg" alt="下関店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">下関店</p>
+									<p class="des">山口県進出1号拠点</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒751-0802 山口県下関市勝谷新町1-10-11</p>
+									<p><span class="bold">TEL</span><a href="tel:0120-771-185">0120-771-185</a></p>
+									<p><span class="bold">FAX</span>083-263-6602</p>
+									<p><span class="bold">営業時間</span>10：00～18：00</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_19.jpg" alt="ハンズクラフト博多店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">ハンズクラフト博多店</p>
+									<p class="des">福岡市進出1号拠点</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒812-0008 福岡県福岡市博多区東光2-3-23</p>
+									<p><span class="bold">TEL</span><a href="tel:092-477-5556">092-477-5556</a></p>
+									<p><span class="bold">FAX</span>092-477-5559</p>
+									<p><span class="bold">営業時間</span>10：00～18：00</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_20.jpg" alt="ハンズクラフト福岡インター店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">ハンズクラフト福岡インター店</p>
+									<p class="des">福岡市進出2号拠点</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒811-2312 福岡県糟屋郡粕屋町戸原838-1</p>
+									<p><span class="bold">TEL</span><a href="tel:092-624-5800">092-624-5800</a></p>
+									<p><span class="bold">FAX</span>092-624-5801</p>
+									<p><span class="bold">営業時間</span>10：00～19：30</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+							<li class="fadeup">
+								<figure><img src="../imgs/business/img_business_21.jpg" alt="鞘ヶ谷店" class="imgfull"></figure>
+								<div class="store-name">
+									<p class="name">鞘ヶ谷店</p>
+									<p class="des">戸畑倉庫</p>
+								</div>
+								<div class="store-contact">
+									<p><span class="bold">住所</span>〒804-0024 北九州市戸畑区西鞘ケ谷町5-28</p>
+									<p><span class="bold">TEL</span><a href="tel:093-616-1600">093-616-1600</a></p>
+									<p><span class="bold">FAX</span>093-616-1620</p>
+									<p><span class="bold">営業時間</span>10：00～18：00</p>
+									<p><span class="bold">定休日</span>定休日なし</p>
+								</div>
+							</li>
+						</ul>
+					</div><!-- .container -->
+				</div><!-- .business -->
+			</div><!-- business-wrap -->
+		</section><!-- .sec-business -->
+	</main><!-- #contents -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="fsection">
+				<div class="fcontact">
+					<p class="name">株式会社ライフクリエイト</p>
+					<p class="info">〒800-0257　<br class="pc-only">
+					福岡県北九州市小倉南区湯川1-2-13<br>
+					Tel：<a href="tel:093-932-1331">093-932-1331</a> / Fax:093-932-1330</p>
+				</div>
+				<nav id="fnav">
+					<div class="col-nav">
+						<p class="fnav-ttl fnav-parent poppins">ABOUT</p>
+						<ul class="fnav-sub">
+							<li><a href="../about/" class="fnav-item">経営ビジョン</a></li>
+							<li><a href="../about/message.html" class="fnav-item">代表メッセージ</a></li>
+							<li><a href="../about/company.html" class="fnav-item">会社概要、沿革</a></li>
+						</ul>
+					</div>
+					<div class="col-nav">
+						<p class="fnav-ttl fnav-parent poppins">BUSINESS</p>
+						<ul class="fnav-sub">
+							<li><a href="../business/" class="fnav-item">事業紹介</a></li>
+							<li><a href="../business/future.html" class="fnav-item">これからのライフクリエイト</a></li>
+						</ul>
+						<p class="fnav-ttl fnav-parent poppins pt20">INTERVIEW</p>
+						<ul class="fnav-sub">
+							<li><a href="../interview/" class="fnav-item">先輩の声</a></li>
+						</ul>
+					</div>
+					<div class="col-nav">
+						<p class="fnav-ttl fnav-parent poppins">RECRUIT</p>
+						<ul class="fnav-sub">
+							<li><a href="../recruit/" class="fnav-item">求める人物像</a></li>
+							<li><a href="../recruit/information.html" class="fnav-item">求人情報一覧</a></li>
+							<li><a href="../entry/" class="fnav-item">エントリーフォーム</a></li>
+						</ul>
+					</div>
+					<div class="col-nav">
+						<p class="fnav-ttl fnav-parent poppins">NEWS</p>
+						<ul class="fnav-sub">
+							<li><a href="../news/detail.html" class="fnav-item">採用情報</a></li>
+							<li><a href="../news/detail.html" class="fnav-item">社会貢献</a></li>
+							<li><a href="../news/detail.html" class="fnav-item">社内イベント</a></li>
+							<li><a href="../news/detail.html" class="fnav-item">メディア情報</a></li>
+						</ul>
+					</div>
+					<div class="col-nav">
+						<ul class="fnav-other">
+							<li><a href="../contact/" class="fnav-item-other">お問い合せ</a></li>
+							<li><a href="../privacy/" class="fnav-item-other">個人情報保護方針</a></li>
+							<li><a href="../training/" class="fnav-item-other">工具研修声募集</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div><!-- .fsection -->
+		</div><!-- .container -->
+
+		<div class="fconnect">
+			<div class="container">
+				<div class="two-col">
+					<ul>
+						<li>道具商：福岡県公安委員会許可第902090910006号<br>質　屋：福岡県公安委員会許可第902091130001号</li>
+						<li>機械工具商：福岡公安委員会許可第902021210002号<br>産業廃棄物収集運搬業：04000177815</li>
+						<li>一般廃棄物収集運搬業：北九一廃 第522号<br>整理収納アドバイザー2級：HKSA2-73214</li>
+					</ul>
+					<ul>
+						<li>リビングスタイリスト2級：B160164<br>リフォームスタイリスト：R25152</li>
+						<li>しろあり防除施工士：第14050号<br>遺品整理士：認定ISO 1515</li>
+						<li>貨物軽自動車運送事業<br>一般酒類小売業、JRO家財評価アドバイザー</li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- .fconnect -->
+		
+		<p id="copyright">Copyright &copy; Life Crete Co.,Ltd. All rights reserved.</p>
+	</footer><!-- / #footer -->
+
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="../js/jquery.matchHeight-min.js"></script>
+	<script src="../js/script.js"></script>
+	<script>
+		$(window).on('resize load', function() {
+			var $this = $(this);
+			var $winW = $this.width();
+			var $containerW = $('.container').width();
+			var $margin = ( $winW - $containerW ) / 2 ;
+			$('.target').css({
+				'padding-left': $margin
+			});
+		});
+	</script>
+</body>
+</html>

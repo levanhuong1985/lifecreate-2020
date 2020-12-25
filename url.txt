@@ -1,0 +1,41 @@
+■ TOP
+http://adshin.net/prototype/test/lifecreate/
+
+■ ABOUT
+http://adshin.net/prototype/test/lifecreate/about/
+http://adshin.net/prototype/test/lifecreate/about/message.html
+http://adshin.net/prototype/test/lifecreate/about/company.html
+
+■ BUSINESS
+http://adshin.net/prototype/test/lifecreate/business/
+http://adshin.net/prototype/test/lifecreate/business/future.html
+
+■ RECRUIT
+http://adshin.net/prototype/test/lifecreate/recruit/
+http://adshin.net/prototype/test/lifecreate/recruit/information.html
+http://adshin.net/prototype/test/lifecreate/recruit/detail.html
+
+■ INTERVIEW
+http://adshin.net/prototype/test/lifecreate/interview/
+
+■ ENTRY
+http://adshin.net/prototype/test/lifecreate/entry/
+http://adshin.net/prototype/test/lifecreate/entry/confirm.html
+
+■ NEWS
+http://adshin.net/prototype/test/lifecreate/news/
+http://adshin.net/prototype/test/lifecreate/news/detail.html
+
+■ CONTACT
+http://adshin.net/prototype/test/lifecreate/contact/
+http://adshin.net/prototype/test/lifecreate/contact/confirm.html
+
+■ PRIVACY
+http://adshin.net/prototype/test/lifecreate/privacy/
+
+■ TRAINING
+http://adshin.net/prototype/test/lifecreate/training/
+http://adshin.net/prototype/test/lifecreate/training/inquiry.html
+http://adshin.net/prototype/test/lifecreate/training/confirm.html
+
+test

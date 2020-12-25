@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/*==================================================================
+	Style setting
+===================================================================*/
+.sec-business { padding: 120px 0 0; }
+.bg-gray  { background: #EEE; }
+.bg-white { background: #FFF; }
+.target {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.target .info {
+	order: 1;
+	width: 42.5%;
+}
+.target .ttl {
+	font-size: 4rem;
+	margin-bottom: 30px;
+}
+.target .img {
+	order: 2;
+	width: 54.5%;
+}
+.business { padding: 120px 0; }
+.business .ttl-intro {
+	font-size: 3.5rem;
+	font-weight: bold;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.business .list-business { margin-bottom: 0!important; }
+.business .business-main {
+	background: #FFF;
+	border-radius: 10px;
+	box-shadow: 0 0 7px rgba(112, 112, 112 , 0.25);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.business .business-main .info {
+	padding: 50px;
+	width: 53.57%;
+}
+.business .business-main .info .ttl { margin-bottom: 30px; }
+.business .business-main .img {	width: 46.428%; }
+.business .list-stores {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-right: -3.8%;
+}
+.business .list-stores li {
+	background: #FFF;
+	box-shadow: 0 0 7px rgba(112, 112, 112 , 0.25);
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 3.78% 3.78% 0 0;
+	padding: 30px 51px 22px;
+	width: 46.22%;
+}
+.business .list-stores li .store-name {
+	border-bottom: 1px solid #707070;
+	padding: 35px 20px 15px;
+}
+.business .list-stores li .store-name .name {
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+.business .list-stores li .store-contact {
+	line-height: 1.8;
+	padding: 20px;
+}
+.business .list-stores li .store-contact > p { display: flex; }
+.business .list-stores li .store-contact > p > span {
+	display: inline-block;
+	margin-right: 20px;
+	white-space: nowrap;
+}
+@media screen and (max-width: 1400px) {
+	.target .img { width: 50%; }
+	.target .ttl { font-size: 3.5rem; }
+}
+@media screen and (max-width: 767px){
+	.sec-business { padding: 60px 0 0; }
+	.target {
+		display: block;
+		padding: 0 15px 30px;
+	}
+	.target .img, .target .info { width: 100%; }
+	.target .img { margin-bottom: 30px; }
+	.target .ttl {
+		font-size: 2rem;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	.business { padding: 30px 0; }
+	.business .ttl-intro {
+		font-size: 2.5rem;
+		margin-bottom: 30px;
+	}
+	.business .business-main {
+		border-radius: 5px;
+		display: block;
+		padding: 30px 15px 15px;
+	}
+	.business .business-main .info { padding: 0 0 15px; width: 100%; }
+	.business .business-main .info .ttl { margin-bottom: 15px; }
+	.business .business-main .img { width: 100%; }
+
+	.business .list-stores {
+		display: block;
+		margin-right: 0;
+		padding: 0 15px;
+	}
+	.business .list-stores li {
+		border-radius: 5px;
+		margin-right: 0;
+		padding: 15px;
+		width: 100%;
+	}
+	.business .list-stores li .store-name { padding: 15px 0; }
+	.business .list-stores li .store-name .name { font-size: 1.8rem; }
+	.business .list-stores li .store-contact { padding: 15px 0; }
+}
+
+.sec-future { padding: 120px 0; }
+
+@media screen and (max-width: 767px){
+	.sec-future { padding: 60px 0; }
+}
+@media screen and (max-width: 320px){
+	.target .ttl { font-size: 1.8rem; }
+	.business .list-stores li .store-name .name { font-size: 1.6rem; }
+}

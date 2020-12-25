@@ -1,0 +1,342 @@
+@charset "UTF-8";
+/*==================================================================
+	Keyv setting
+===================================================================*/
+#keyv { position: relative; }
+#keyv > img { width: 100%; }
+#keyv .ttl {
+	margin: 0 auto;
+	max-width: 1400px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 170px;
+	z-index: 10;
+}
+#keyv .ttl img { width: 826px; }
+#keyv .scroll {
+	margin: 0 auto;
+	width: 50px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	z-index: 10;
+}
+#keyv .scroll {
+    animation: scrollDown 1.5s infinite linear;
+}
+@-webkit-keyframes scrollDown {
+    0% {  }
+    50% { transform: translateY(-15px); }
+    100% { }
+}
+@keyframes scrollDown {
+    0% {  }
+    50% { transform: translateY(-15px); }
+    100% { }
+}
+@media screen and (max-width: 1400px){
+	#keyv .ttl {
+		bottom: 20%;
+		padding: 0 10%;
+	}
+	#keyv .ttl img { width: 590px; }
+}
+@media screen and (max-width: 767px){
+	#keyv .ttl {
+		left: 25px;
+		bottom: 35px;
+		padding: 0;
+	}
+	#keyv .ttl img { width: 278px; }
+}
+
+/*==================================================================
+	Contents setting
+===================================================================*/
+/*----sec-about----------------------------------------------------*/
+.sec-about { padding: 120px 0 0; }
+.txt-slogan {
+	border-bottom: 2px dotted #999;
+	font-size: 4rem;
+	line-height: 1.8;
+	max-width: 1082px;
+	margin: 0 auto 118px;
+	padding: 15px 0 0;
+	text-align: center;
+}
+.target {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+.target .info {
+	max-width: 630px;
+	width: 45%;
+	padding-right: 30px;
+}
+.target .ttl {
+	font-size: 4rem;
+	margin-bottom: 45px;
+}
+.target .ttl:after {
+	background: #EB031C;
+	content: "";
+	display: block;
+	height: 2px;
+	width: 80px;
+	margin-top: 30px;
+}
+.target .txt {
+	line-height: 1.8;
+	margin-bottom: 60px;
+}
+.target .img { width: 55%; }
+.philosophy {
+	background: url(../imgs/top/bg_philosophy.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+	padding: 100px 0;
+}
+@supports (-webkit-touch-callout: inherit) {
+	.philosophy { background-attachment: inherit; }
+}
+.list-philosophy li {
+	background: #FFF;
+	border-radius: 4px;
+	margin-bottom: 50px;
+	padding: 42px 70px 55px;
+	max-width: 1000px;
+}
+.list-philosophy li:nth-child(even) { margin-left: auto; }
+.list-philosophy li:last-child { margin-bottom: 0; }
+.list-philosophy .ttl01 {
+	border-bottom: 2px solid #EB031C;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+.list-philosophy .ttl01 .jp {
+	font-size: 2.5rem;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.list-philosophy .ttl01 .en {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-left: 22px;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+.list-philosophy .ttl02 {
+	font-size: 4rem;
+	margin-bottom: 30px;
+}
+.list-philosophy .txt {	line-height: 1.8; }
+.list-philosophy .corporate {
+	font-size: 2.2rem;
+	line-height: 1.8;
+}
+.greeting {
+	background: #EEE;
+	padding: 90px 0;
+}
+.greeting .ttl {
+	margin-bottom: 50px;
+	text-align: center;
+}
+.greeting .ttl .jp,
+.greeting .ttl .en {
+	display: block;
+	line-height: 1.8;
+}
+.greeting .ttl .jp {
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+.greeting .ttl .en {
+	font-size: 1.3rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.greeting .video { text-align: center; }
+
+@media screen and (max-width: 1400px){
+	.txt-slogan { font-size: 3rem; margin-bottom: 60px; }
+	.target .ttl { font-size: 3.5rem;}
+	.target .img { width: 50%; }
+	.list-philosophy li { max-width: 800px; padding: 20px 20px 30px 40px; }
+	.list-philosophy .ttl01 { margin-bottom: 20px; }
+	.list-philosophy .ttl02 { font-size: 3rem; margin-bottom: 20px; }
+	.list-philosophy .corporate { font-size: 1.8rem; }
+}
+@media screen and (max-width: 767px){
+	.sec-about { padding-top: 50px; }
+	.txt-slogan {
+		border-width: 1px;
+		font-size: 2rem;
+		margin: 0 15px 40px;
+		padding-top: 0;
+		padding-bottom: 15px;
+	}
+	.target {
+		display: block;
+		margin-bottom: 50px;
+		padding-right: 0!important;
+	}
+	.target .img, .target .info { width: 100%; }
+	.target .img {
+		margin-bottom: 30px;
+		padding-right: 18px;
+	}
+	.target .info { padding: 0 15px; }
+	.target .ttl {
+		font-size: 2rem;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	.target .ttl:after {
+		margin: 10px auto 0;
+		width: 40px;
+	}
+	.target .txt { margin-bottom: 25px; }
+	.philosophy { padding: 50px 0; }
+	.list-philosophy li {
+		margin-bottom: 15px;
+		padding: 25px;
+	}
+	.list-philosophy .ttl01 {
+		border-width: 1px;
+		margin-bottom: 15px;
+	}
+	.list-philosophy .ttl01 .jp { font-size: 2rem; }
+	.list-philosophy .ttl01 .en { font-size: 1rem; }
+	.list-philosophy .ttl02 {
+		font-size: 2rem;
+		margin-bottom: 12px;
+	}
+	.list-philosophy .corporate { font-size: 1.6rem; }
+	.greeting { padding: 35px 0 50px; }
+	.greeting .ttl { margin-bottom: 20px; }
+	.greeting .ttl .jp { font-size: 1.75rem; }
+	.greeting .ttl .en { font-size: 1rem; }
+
+	.greeting .video iframe { width: 100%; height: 190px; }
+}
+
+/*----sec-business-------------------------------------------------*/
+.sec-business {
+	padding: 100px 0;
+	position: relative;
+}
+.sec-business:after {
+	background: #EEE;
+	content: "";
+	display: block;
+	height: 100%;
+	max-height: 450px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+@media screen and (max-width: 767px){
+	.sec-business { padding: 50px 0; }
+	.sec-business:after { max-height: 280px; }
+}
+
+/*----sec-interview-------------------------------------------------*/
+.sec-interview { padding-bottom: 100px; }
+.head-interview {
+	background: #FFF;
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: -125px;
+	padding: 70px 15px 35px;
+	position: relative;
+}
+.list-interviewers {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -4.76%;
+	margin-bottom: 60px;
+}
+.list-interviewers li {
+	background: #FFF;
+	border-radius: 8px;
+	box-shadow: 0 0 7px rgba(112, 112, 112 , 0.25);
+	overflow: hidden;
+	margin-right: 4.76%;
+	position: relative;
+	text-align: center;
+	width: 28.57%;
+}
+.list-interviewers li:nth-child(1) { transition-delay: 0s; }
+.list-interviewers li:nth-child(2) { transition-delay: 0.25s; }
+.list-interviewers li:nth-child(3) { transition-delay: 0.50s; }
+
+.list-interviewers li .box {
+	background: #333;
+	color: #FFF;
+	max-width: 204px;
+	padding: 12px 10px 12px 20px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: left;
+	width: 242px;
+	z-index: 1;
+}
+.list-interviewers li .box .position {
+	display: block;
+	font-size: 1.2rem;
+	font-weight: 400;
+	letter-spacing: -0.1em;
+}
+.list-interviewers li .box .name {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.list-interviewers li .info { padding: 35px 40px 40px; }
+.list-interviewers li .ttl {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.list-interviewers li .btn {
+	font-size: 1.3rem;
+	max-width: 250px;
+	height: 60px;
+}
+.list-interviewers li .btn .arrow { width: 15px; }
+.list-interviewers li .btn .arrow:after { left: 25px; width: 5px; top: -2px; }
+
+@media screen and (max-width: 767px){
+	.sec-interview { padding-bottom: 50px; }
+	.head-interview {
+		margin-top: -25px;
+		padding: 35px 10px;
+	}
+	.list-interviewers { margin-bottom: 30px; }
+	.list-interviewers li { margin-bottom: 30px; width: 100%; }
+	.list-interviewers li:last-child { margin-bottom: 0; }
+	.list-interviewers li .box { padding: 8px 4px 6px 10px; }
+	.list-interviewers li .info { padding: 15px 15px 30px; }
+	.list-interviewers li .ttl { font-size: 1.8rem; }
+	.list-interviewers li .btn { height: 35px; font-size: 1.2rem; max-width: 135px; }
+}
+
+@media screen and (max-width: 320px){
+	.txt-slogan { font-size: 1.7rem; }
+	.target .ttl { font-size: 1.7rem; }
+	.list-philosophy .ttl02 { font-size: 1.7rem; }
+}

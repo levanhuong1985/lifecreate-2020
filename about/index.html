@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="{[#SITE_DESCRIPTION#]}">
+<meta name="keywords" content="{[#SITE_KEYWORDS#]}">
+<meta name="format-detection" content="telephone=no">
+<title>[#SITE_TITLE#]}</title>
+<script type="text/javascript">
+	if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+		document.write('<meta name="viewport" content="width=device-width, initial-scale=1">');
+	}else{
+		document.write('<meta name="viewport" content="width=1400">');
+	}
+</script>
+<link rel="stylesheet" href="../css/normalize.css" media="all">
+<link rel="stylesheet" href="../css/style.css" media="all">
+<link rel="stylesheet" href="../css/about.css" media="all">
+<link rel="index contents" href="/" title="ホーム">
+</head>
+<body>
+	<header id="header">
+		<h1 id="logo"><a href="../"><img src="../imgs/common/logo.svg" alt="株式会社ライフクリエイト"></a></h1>
+		<nav id="gnav" class="pc-only">
+			<ul>
+				<li><a href="#sub-gnav-about" class="nav-item"><span class="en poppins">ABOUT US</span><span class="jp">ライフクリエイトを知る</span></a></li>
+				<li><a href="../business/" class="nav-item"><span class="en poppins">BUSINESS</span><span class="jp">仕事を知る</span></a></li>
+				<li><a href="#sub-gnav-recruit" class="nav-item"><span class="en poppins">RECRUIT</span><span class="jp">採用情報を知る</span></a></li>
+				<li><a href="../interview/" class="nav-item"><span class="en poppins">INTERVIEW</span><span class="jp">先輩インタビュー</span></a></li>
+			</ul>
+			<div class="btn-entry"><a href="../recruit/information.html" class="nav-item"><span class="en poppins">ENTRY</span><span class="jp">エントリー</span></a></div>
+			<div class="sub-gnav" id="sub-gnav-about">
+				<div class="sub-gnav-ttl">
+					<p><span class="en poppins">ABOUT US</span><span class="jp">ライフクリエイトを知る</span></p>
+				</div>
+				<div class="sub-gnav-items">
+					<ul>
+						<li><a href="../about/index.html" class="sub-nav-item">経営ビジョン</a></li>
+						<li><a href="../about/message.html" class="sub-nav-item">代表メッセージ</a></li>
+						<li><a href="../about/company.html" class="sub-nav-item">会社概要・沿革</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="sub-gnav" id="sub-gnav-recruit">
+				<div class="sub-gnav-ttl">
+					<p><span class="en poppins">RECRUIT</span><span class="jp">採用情報を知る</span></p>
+				</div>
+				<div class="sub-gnav-items">
+					<ul>
+						<li><a href="../recruit/index.html" class="sub-nav-item">求める人物像</a></li>
+					</ul>
+					<p class="sub-ttl">求人情報一覧</p>
+					<ul>
+						<li><a href="../recruit/information.html" class="sub-nav-item">新卒採用</a></li>
+						<li><a href="../recruit/information.html" class="sub-nav-item">中途採用</a></li>
+						<li><a href="../recruit/information.html" class="sub-nav-item">アルバイト・パート</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="open-menu" class="sp-only">
+			<span>-</span>
+		</div>
+		<nav id="sp-nav" class="sp-only">
+			<div class="sp-nav-inner">
+				<ul class="main-nav">
+					<li>
+						<p><a href="javascript:void(0);" class="sp-nav-parent has-sub poppins">ABOUT</a></p>
+						<ul class="sp-nav-sub">
+							<li><a href="../about/" class="sp-nav-item">経営ビジョン</a></li>
+							<li><a href="../about/message.html" class="sp-nav-item">代表メッセージ</a></li>
+							<li><a href="../about/company.html" class="sp-nav-item">会社概要、沿革</a></li>
+						</ul>
+					</li>
+					<li>
+						<p><a href="javascript:void(0);" class="sp-nav-parent has-sub poppins">BUSINESS</a></p>
+						<ul class="sp-nav-sub">
+							<li><a href="../business/" class="sp-nav-item">事業紹介</a></li>
+							<li><a href="../business/future.html" class="sp-nav-item">これからのライフクリエイト</a></li>
+						</ul>
+					</li>
+					<li>
+						<p><a href="../interview/" class="sp-nav-parent poppins">INTERVIEW</a></p>
+					</li>
+					<li>
+						<p><a href="javascript:void(0);" class="sp-nav-parent has-sub poppins">RECRUIT</a></p>
+						<ul class="sp-nav-sub">
+							<li><a href="../recruit/" class="sp-nav-item">求める人物像</a></li>
+							<li><a href="../recruit/information.html" class="sp-nav-item">求人情報一覧</a></li>
+							<li><a href="../entry/" class="sp-nav-item">エントリーフォーム</a></li>
+						</ul>
+					</li>
+					<li>
+						<p><a href="../news/" class="sp-nav-parent poppins">NEWS</a></p>
+					</li>
+				</ul>
+				<ul class="other-nav">
+					<li><a href="../contact/" class="sp-nav-other">お問い合せ</a></li>
+					<li><a href="../privacy/" class="sp-nav-other">個人情報保護方針</a></li>
+					<li><a href="../training/" class="sp-nav-other">工具研修声募集</a></li>
+				</ul>
+				<p class="entry"><a href="../recruit/information.html"><span class="en poppins">ENTRY</span><span class="jp">エントリー</span></a></p>
+				<p class="close"><a href="javascript:void(0);" id="close-menu" class="poppins">CLOSE</a></p>
+			</div>
+		</nav>
+	</header><!-- #header -->
+
+	<section class="main-page">
+		<div class="main-ttl">
+			<h2 class="fadeup"><span class="en poppins">ABOUT US</span><span class="jp">ライフクリエイトを知る</span></h2>
+		</div>
+		<figure><img src="../imgs/about/img_main.jpg" alt="ABOUT US ライフクリエイトを知る" class="imgfull"></figure>
+	</section><!-- .main-page -->
+
+	<main id="contents">
+		<div class="container">
+			<ul class="tab-links fadeup">
+				<li class="active"><a href="index.html">経営ビジョン</a></li>
+				<li><a href="message.html">代表メッセージ</a></li>
+				<li><a href="company.html">会社概要、沿革</a></li>
+			</ul>
+		</div><!-- .container -->
+
+		<section class="sec-about">
+			<h3 class="headline01 fadeup"><span class="en poppins">MISSION-VISION</span><span class="jp">経営ビジョン</span></h3>
+			<div class="mission-vision">
+				<div class="info">
+					<h4 class="ttl fadeup"><span class="jp">基本理念</span><span class="en poppins">BASIC PRINCIPLE</span></h4>
+					<dl class="fadeup">
+						<dt class="noto">『経営を通じて縁ある<br>
+						全ての人を幸せにする』</dt>
+						<dd>
+							<p>仕事の中でお客様、従業員、お取引企業、トリプルWINの関係を築く。<br>各自が他人に喜んでもらうこと（幸せになってもらうこと）を考えて行動する事で、物心共に豊にする。結果、私たちも物心共に豊かになり幸せになる。この考え方を何かに迷った時の指針とする。</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="img">
+					<figure><img src="../imgs/about/img_vision_01.jpg" alt="基本理念 BASIC PRINCIPLE" class="imgfull"></figure>
+				</div>
+			</div><!-- .mission-vision -->
+			<div class="mission-vision">
+				<div class="info">
+					<h4 class="ttl fadeup"><span class="jp">経営理念</span><span class="en poppins">MANAGEMENT PHILOSOPHY</span></h4>
+					<dl class="fadeup">
+						<dt class="noto">『和を紡ぐ』</dt>
+						<dd>
+							<p class="txt-large noto">我々はスタッフ同士の繋がりを大切にし、<br class="pc-only">
+							和を以って仕事に取組み和を以って助け合う。<br>
+							その行動を通じて問題を解決し、人間性を高め、<br class="pc-only">
+							顧客第一主義を掲げ、社会に貢献していく。</p>
+							<p>【和】：平和の和、和むの和、繋がりの環、仲間との輪などの意<br>
+							【紡ぐ】：思考や感性の違う色々な人が協力し、理解し、縁を持ち1本の強い糸のような組織を形成すること</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="img">
+					<figure><img src="../imgs/about/img_vision_02.jpg" alt="経営理念 MANAGEMENT PHILOSOPHY" class="imgfull"></figure>
+				</div>
+			</div><!-- .mission-vision -->
+
+			<div class="container">
+				<div class="corporate">
+					<div class="block-title fadeup">
+						<h4 class="ttl"><span class="jp">企業理念</span><span class="en poppins">Corporate philosophy</span></h4>
+						<p class="lead noto">わが社は便利業、リユース業を<br class="sp-only">統合した、高品質なサービスを通して、<br>
+						世の中の全ての「困った」を解決する。<br>
+						そして環境と地域に貢献する事で社会に<br class="sp-only">必要とされるプロの御用聞き会社を目指す。</p>
+					</div>
+					<div class="block-cont">
+						<h5 class="sub-ttl noto fadeup"><span>3つの真情</span></h5>
+						<table class="tbl-corporate fadeup">
+							<tr>
+								<th class="noto">素 直</th>
+								<td>身の回りに起きる出来事（特に他人の行動・言動）を<span class="bold">まずはありのままに受けとる。</span><br>特に今までの事（過去）からのイメージに影響されることなくこの先（未来）を見据えて、受け入れたことの解釈を色々考える。それが、今後プラスになるかどうかを。<br>その答えがプラスになる場合は答えに沿った行動に変える。この繰り返し、習慣化が結果、素直さを生む。</td>
+							</tr>
+							<tr>
+								<th class="noto">感謝</th>
+								<td>商売、仕事をするうえでは<span class="bold">お客様に「ありがとうございます」</span>と思うことは当然である。<br>なぜなら、私達が報酬として得る給料などは、すべてお客様から得たものである。報酬が増えることは、より多くのお客様に必要とされることの結果である。<br>また、自身が健康で毎日、働くための必要な体、精神は毎日の食事や運動、仕事。両親、身内、友人、共に働く仲間の協力によって形成されてると理解する。<br>受けたものは返すことで成り立つため、感謝と共に気遣いを忘れてはならない。<br>
+								感謝は「する」だけでなく、「される」ことも必然である。<br>
+								より多くの「ありがとう」を追究していきましょう。</td>
+							</tr>
+							<tr>
+								<th class="noto">成長</th>
+								<td>生きていく以上、「成長」は、絶対に必要である。<br>「成長」こそが、周囲を助け、与え、役に立つためには欠かせない条件。「成長」するためには、時間と共に得られる「経験」を基に考え方」をも成長させないと、結果が変わらない。<br>なぜなら考え方が変わらないと行動が変わらないからである。<span class="bold">心を育てることが</span>自分自身に与えられた最大の貢献である。</td>
+							</tr>
+						</table>
+					</div>
+				</div><!-- .corporate -->
+
+				<div class="corporate">
+					<div class="block-title fadeup">
+						<h4 class="ttl"><span class="jp">行動指針</span><span class="en poppins">Behavioral guidelines</span></h4>
+						<p class="lead noto">地域で｢一番働きたい会社｣と<br class="sp-only">言われる会社を目指す！</p>
+						<p class="txt noto">弊社では「行動指針」に<br class="sp-only">基づいて、社内外のイベント<br class="sp-only">活動を行っております。</p>
+					</div>
+					<div class="block-cont">
+						<table class="tbl-corporate fadeup">
+							<tr>
+								<th class="noto">顧客</th>
+								<td>
+									<p class="small-ttl">我々は顧客第一主義を念頭に顧客満足を優先します</p>
+									<p>判断を迷ったときの一貫性は、常に「顧客第一主義」。<br>
+									お金だけの満足度ではなく、サービスでの満足度を追究する。</p>
+								</td>
+							</tr>
+							<tr>
+								<th class="noto">利益</th>
+								<td>
+									<p class="small-ttl">我々は利益の最大化を追求します！</p>
+									<p>利益を生むことが会社存続の条件であり、発展するための条件です。<br>
+									物心ともに充実し、家族やお客様、取引先など我々に縁があるすべての人たちが幸せな生活を送るため、会社と個人の価値を高め、利益の最大化を追い求めます。</p>
+									<ul class="list-text">
+										<li>リサイクル事業・質</li>
+										<li>リサイクル事業</li>
+										<li>便利業</li>
+										<li>輸出事業</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th class="noto">仲間</th>
+								<td>
+									<p class="small-ttl">我々はひとりひとりが行動に責任を持ち、全員で力を合わせて共通のゴールに向かいます！</p>
+									<p>我々はチームワークを大切にし、相手の立場に立ち、思いやりを持って行動します。<br>
+									また、仲間と共に切磋琢磨することで自らのレベルアップを図り、共通の目的を達成します。</p>
+								</td>
+							</tr>
+							<tr>
+								<th class="noto">和・輪</th>
+								<td>
+									<p class="small-ttl">我々はすべての和を尊い存在と捉えます！</p>
+									<p>我々はチームの和、平和の和、お取引き先様との和、お客様との和、家族の和など、日本古来の伝統、習慣などからある全ての和(縁)を尊い存在と考え、大切に行動します。</p>
+								</td>
+							</tr>
+							<tr>
+								<th class="noto">人間力</th>
+								<td>
+									<p class="small-ttl">我々は常に自己成長するために人間力を高めます！</p>
+									<p>仕事を通じて仲間とともに切磋琢磨すること。常に相手の立場に立って物事を考えること。<br>多くの経験をつんで人間性を高めること。それらを通じて人としての魅力を高め、すべての人を愛し、愛される存在を目指します。</p>
+								</td>
+							</tr>
+							<tr>
+								<th class="noto">感謝</th>
+								<td>
+									<p class="small-ttl">我々はすべてに感謝します！</p>
+									<p>我々はお客様はもちろんスタッフ、取引先などすべての人に「ありがとう」という気持ちを持って行動します。<br>また、自分の前で起こったすべての事柄を素直に捉え、常にプラス思考で自らの成長につなげます。</p>
+								</td>
+							</tr>
+							<tr>
+								<th class="noto">夢</th>
+								<td>
+									<p class="small-ttl">我々は夢を持ち続け、仕事を通じて夢を実現します！</p>
+									<p>我々は常に仕事やプライベートで大小さまざまな夢や目標を持ち続け、夢や目標を原動力に日々全力で取り組み達成します。</p>
+								</td>
+							</tr>
+							<tr>
+								<th class="noto">社会貢献</th>
+								<td>
+									<p class="small-ttl">我々は社会の一員として地域に貢献します！</p>
+									<p>我々は地域社会の一員として、お客様に最高のサービスを提供すること、雇用を創造することで、地域の活性化に必要不可欠な存在になることを目指します。</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div><!-- .corporate -->
+			</div><!-- .container -->
+		</section><!-- .sec-about -->
+	</main><!-- #contents -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="fsection">
+				<div class="fcontact">
+					<p class="name">株式会社ライフクリエイト</p>
+					<p class="info">〒800-0257　<br class="pc-only">
+					福岡県北九州市小倉南区湯川1-2-13<br>
+					Tel：<a href="tel:093-932-1331">093-932-1331</a> / Fax:093-932-1330</p>
+				</div>
+				<nav id="fnav">
+					<div class="col-nav">
+						<p class="fnav-ttl fnav-parent poppins">ABOUT</p>
+						<ul class="fnav-sub">
+							<li><a href="../about/" class="fnav-item">経営ビジョン</a></li>
+							<li><a href="../about/message.html" class="fnav-item">代表メッセージ</a></li>
+							<li><a href="../about/company.html" class="fnav-item">会社概要、沿革</a></li>
+						</ul>
+					</div>
+					<div class="col-nav">
+						<p class="fnav-ttl fnav-parent poppins">BUSINESS</p>
+						<ul class="fnav-sub">
+							<li><a href="../business/" class="fnav-item">事業紹介</a></li>
+							<li><a href="../business/future.html" class="fnav-item">これからのライフクリエイト</a></li>
+						</ul>
+						<p class="fnav-ttl fnav-parent poppins pt20">INTERVIEW</p>
+						<ul class="fnav-sub">
+							<li><a href="../interview/" class="fnav-item">先輩の声</a></li>
+						</ul>
+					</div>
+					<div class="col-nav">
+						<p class="fnav-ttl fnav-parent poppins">RECRUIT</p>
+						<ul class="fnav-sub">
+							<li><a href="../recruit/" class="fnav-item">求める人物像</a></li>
+							<li><a href="../recruit/information.html" class="fnav-item">求人情報一覧</a></li>
+							<li><a href="../entry/" class="fnav-item">エントリーフォーム</a></li>
+						</ul>
+					</div>
+					<div class="col-nav">
+						<p class="fnav-ttl fnav-parent poppins">NEWS</p>
+						<ul class="fnav-sub">
+							<li><a href="../news/detail.html" class="fnav-item">採用情報</a></li>
+							<li><a href="../news/detail.html" class="fnav-item">社会貢献</a></li>
+							<li><a href="../news/detail.html" class="fnav-item">社内イベント</a></li>
+							<li><a href="../news/detail.html" class="fnav-item">メディア情報</a></li>
+						</ul>
+					</div>
+					<div class="col-nav">
+						<ul class="fnav-other">
+							<li><a href="../contact/" class="fnav-item-other">お問い合せ</a></li>
+							<li><a href="../privacy/" class="fnav-item-other">個人情報保護方針</a></li>
+							<li><a href="../training/" class="fnav-item-other">工具研修声募集</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div><!-- .fsection -->
+		</div><!-- .container -->
+
+		<div class="fconnect">
+			<div class="container">
+				<div class="two-col">
+					<ul>
+						<li>道具商：福岡県公安委員会許可第902090910006号<br>質　屋：福岡県公安委員会許可第902091130001号</li>
+						<li>機械工具商：福岡公安委員会許可第902021210002号<br>産業廃棄物収集運搬業：04000177815</li>
+						<li>一般廃棄物収集運搬業：北九一廃 第522号<br>整理収納アドバイザー2級：HKSA2-73214</li>
+					</ul>
+					<ul>
+						<li>リビングスタイリスト2級：B160164<br>リフォームスタイリスト：R25152</li>
+						<li>しろあり防除施工士：第14050号<br>遺品整理士：認定ISO 1515</li>
+						<li>貨物軽自動車運送事業<br>一般酒類小売業、JRO家財評価アドバイザー</li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- .fconnect -->
+		
+		<p id="copyright">Copyright &copy; Life Crete Co.,Ltd. All rights reserved.</p>
+	</footer><!-- / #footer -->
+
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="../js/jquery.matchHeight-min.js"></script>
+	<script src="../js/script.js"></script>
+	<script>
+		$(window).on('resize load', function() {
+			var $this = $(this);
+			var $winW = $this.width();
+			var $containerW = $('.container').width();
+			var $margin = ( $winW - $containerW ) / 2 ;
+			$('.mission-vision:nth-child(odd) .info').css({
+				'padding-right': $margin
+			});
+			$('.mission-vision:nth-child(even) .info').css({
+				'padding-left': $margin
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/*==================================================================
+	Style setting
+===================================================================*/
+.sec-training { padding: 120px 0; }
+.introduce {
+	padding-bottom: 25px;
+	text-align: center;
+}
+.introduce .ttl {
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.introduce p {
+	margin-bottom: 30px;
+}
+.issues {
+	box-shadow: 0 0 7px rgba(112, 112, 112 , 0.25);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 auto 100px;
+	max-width: 1000px;
+	padding: 38px 44px;
+	position: relative;
+}
+.issues:before {
+	background: #E80B1C;
+	content: "";
+	display: block;
+	height: 5px;
+	width: 300px;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+.issues .info {
+	padding-left: 44px;
+	width: 46%;
+}
+.issues .ttl {
+	color: #E80B1C;
+	font-weight: bold;
+	font-size: 2.2rem;
+	margin-bottom: 30px;
+}
+.issues .img { width: 50%; }
+
+.training-detail {
+	background: #F2F2F2;
+}
+.training-detail .btn { max-width: 520px; }
+.training-detail .detail-inner {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 100px 15px;
+}
+.training-detail .ttl {
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin: 0 auto 25px;
+	max-width: 540px;
+	position: relative;
+	text-align: center;
+}
+.training-detail .ttl:before,
+.training-detail .ttl:after {
+	background: #707070;
+	content: "";
+	display: inline-block;
+	height: 30px;
+	width: 3px;
+	position: absolute;
+	bottom: 3px;
+}
+.training-detail .ttl:before {
+	margin-right: 0;
+	transform: rotate(-28deg);
+	left: 0;
+}
+.training-detail .ttl:after {
+	margin-left: 0;
+	transform: rotate(28deg);
+	right: 0;
+}
+.training-detail .tbl {
+	background: #FFF;
+	margin: 90px 0 50px;
+}
+.training-detail .flow {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 60px;
+}
+.training-detail .flow .img-left { width: 55.7%; }
+.training-detail .flow .img-right { width: 40%; }
+
+@media screen and (max-width: 767px){
+	.sec-training { padding: 60px 0 0; }
+	.introduce .ttl { font-size: 2rem; margin-bottom: 15px;}
+	.introduce p { margin-bottom: 15px; }
+	.issues {
+		box-shadow: none;
+		margin-bottom: 50px;
+		padding: 0;
+	}
+	.issues:before { display: none;}
+	.issues .info, .issues .img { width: 100%; padding: 0; }
+	.issues .info { margin-bottom: 20px; }
+	.issues .ttl {
+		font-size: 2rem;
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+		position: relative;
+		text-align: center;
+	}
+	.issues .ttl:after {
+		background: #E80B1C;
+		content: "";
+		display: block;
+		height: 3px;
+		width: 50px;
+		margin: 0 auto;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+	.training-detail { margin: 0 -15px; }
+	.training-detail .detail-inner { padding: 50px 15px; }
+	.training-detail .ttl { font-size: 1.8rem; max-width: 280px; }
+	.training-detail .ttl:before, .training-detail .ttl:after {
+		bottom: 5px;
+		width: 2px;
+	}
+	.training-detail .btn { max-width: 285px; }
+	.training-detail .tbl { margin: 45px 0 25px; }
+	.tbl-style td { font-weight: normal; }
+	.training-detail .flow { display: block; margin-bottom: 30px; }
+	.training-detail .flow .img-left, .training-detail .flow .img-right { width: 100%; }
+	.training-detail .flow .img-right { padding: 20px 30px; text-align: center; }
+}
