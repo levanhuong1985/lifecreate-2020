@@ -1,3 +1,7 @@
+AddType text/x-component .htc
+
+Options +Includes
+AddHandler server-parsed html
 
 # BEGIN WordPress
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
@@ -17,3 +21,5 @@ RewriteRule . /index.php [L]
 SetEnvIf Request_URI ".*" AllowCountry
 SetEnvIf Request_URI ".*" AllowRestApi
 SetEnvIf Request_URI ".*" WpCommentDeny
+SetEnvIf Request_URI ".*" Ngx_Cache_NoCacheMode=off
+SetEnvIf Request_URI ".*" Ngx_Cache_StaticMode

@@ -1,7 +1,4 @@
-<?php 
-if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
-?>
-
+<?php $home_url = "http://lifecreate.local"; ?>
 <footer id="footer">
 		<div class="container">
 			<div class="fsection">
@@ -15,44 +12,44 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 					<div class="col-nav">
 						<p class="fnav-ttl fnav-parent poppins">ABOUT</p>
 						<ul class="fnav-sub">
-							<li><a href="<?php echo home_url('about'); ?>" class="fnav-item">経営ビジョン</a></li>
-							<li><a href="<?php echo home_url('about/message.html'); ?>" class="fnav-item">代表メッセージ</a></li>
-							<li><a href="<?php echo home_url('about/company.html'); ?>" class="fnav-item">会社概要、沿革</a></li>
+							<li><a href="<?php echo $home_url; ?>/about/" class="fnav-item">経営ビジョン</a></li>
+							<li><a href="<?php echo $home_url; ?>/about/message.html" class="fnav-item">代表メッセージ</a></li>
+							<li><a href="<?php echo $home_url; ?>/about/company.html" class="fnav-item">会社概要、沿革</a></li>
 						</ul>
 					</div>
 					<div class="col-nav">
 						<p class="fnav-ttl fnav-parent poppins">BUSINESS</p>
 						<ul class="fnav-sub">
-							<li><a href="<?php echo home_url('business'); ?>" class="fnav-item">事業紹介</a></li>
-							<li><a href="<?php echo home_url('business/future.html'); ?>" class="fnav-item">これからのライフクリエイト</a></li>
+							<li><a href="<?php echo $home_url; ?>/business/" class="fnav-item">事業紹介</a></li>
+							<li><a href="<?php echo $home_url; ?>/business/future.html" class="fnav-item">これからのライフクリエイト</a></li>
 						</ul>
 						<p class="fnav-ttl fnav-parent poppins pt20">INTERVIEW</p>
 						<ul class="fnav-sub">
-							<li><a href="<?php echo home_url('interview'); ?>" class="fnav-item">先輩の声</a></li>
+							<li><a href="<?php echo $home_url; ?>/interview/" class="fnav-item">先輩の声</a></li>
 						</ul>
 					</div>
 					<div class="col-nav">
 						<p class="fnav-ttl fnav-parent poppins">RECRUIT</p>
 						<ul class="fnav-sub">
-							<li><a href="<?php echo home_url('recruit'); ?>" class="fnav-item">求める人物像</a></li>
-							<li><a href="<?php echo home_url('recruit/information'); ?>" class="fnav-item">求人情報一覧</a></li>
-							<li><a href="<?php echo home_url('entry'); ?>" class="fnav-item">エントリーフォーム</a></li>
+							<li><a href="<?php echo $home_url; ?>/recruit/" class="fnav-item">求める人物像</a></li>
+							<li><a href="<?php echo $home_url; ?>/recruit/information" class="fnav-item">求人情報一覧</a></li>
+							<li><a href="<?php echo $home_url; ?>/entry/" class="fnav-item">エントリーフォーム</a></li>
 						</ul>
 					</div>
 					<div class="col-nav">
 						<p class="fnav-ttl fnav-parent poppins">NEWS</p>
 						<ul class="fnav-sub">
-							<li><a href="<?php echo home_url('category_news/employment-information'); ?>" class="fnav-item">採用情報</a></li>
-							<li><a href="<?php echo home_url('category_news/social-contribution'); ?>" class="fnav-item">社会貢献</a></li>
-							<li><a href="<?php echo home_url('category_news/internal-event'); ?>" class="fnav-item">社内イベント</a></li>
-							<li><a href="<?php echo home_url('category_news/media-information'); ?>" class="fnav-item">メディア情報</a></li>
+							<li><a href="<?php echo $home_url; ?>/category_news/employment-information" class="fnav-item">採用情報</a></li>
+							<li><a href="<?php echo $home_url; ?>/category_news/social-contribution" class="fnav-item">社会貢献</a></li>
+							<li><a href="<?php echo $home_url; ?>/category_news/internal-event" class="fnav-item">社内イベント</a></li>
+							<li><a href="<?php echo $home_url; ?>/category_news/media-information" class="fnav-item">メディア情報</a></li>
 						</ul>
 					</div>
 					<div class="col-nav">
 						<ul class="fnav-other">
-							<li><a href="<?php echo home_url('contact'); ?>" class="fnav-item-other">お問い合せ</a></li>
-							<li><a href="<?php echo home_url('privacy'); ?>" class="fnav-item-other">個人情報保護方針</a></li>
-							<li><a href="<?php echo home_url('training'); ?>" class="fnav-item-other">工具研修声募集</a></li>
+							<li><a href="<?php echo $home_url; ?>/contact/" class="fnav-item-other">お問い合せ</a></li>
+							<li><a href="<?php echo $home_url; ?>/privacy/" class="fnav-item-other">個人情報保護方針</a></li>
+							<li><a href="<?php echo $home_url; ?>/training/" class="fnav-item-other">工具研修声募集</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -78,3 +75,7 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 		
 		<p id="copyright">Copyright &copy; Life Crete Co.,Ltd. All rights reserved.</p>
 	</footer><!-- / #footer -->
+
+	<script src="<?php echo $home_url; ?>/js/jquery-3.5.1.min.js"></script>
+	<script src="<?php echo $home_url; ?>/js/jquery.matchHeight-min.js"></script>
+	<script src="<?php echo $home_url; ?>/js/script.js"></script>
