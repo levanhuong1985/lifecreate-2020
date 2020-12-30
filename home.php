@@ -173,8 +173,8 @@ $youtube_recruit = get_field("youtube_recruit",$config_top->ID);
 						<li><a href="recruit/information.html" class="btn02 black"><span>ライフサポート　作業スタッフ</span><span class="click poppins">CLICK</span></a></li>
 					</ul>
 					<ul class="list-banners">
-						<li class="fadeup"><a href="#"><img src="imgs/top/bnr_01.jpg" alt="募集職種"></a></li>
-						<li class="fadeup"><a href="#"><img src="imgs/top/bnr_02.jpg" alt="募集職種"></a></li>
+						<li class="fadeup"><img src="imgs/top/bnr_01.jpg" alt="募集職種"></li>
+						<li class="fadeup"><img src="imgs/top/bnr_02.jpg" alt="募集職種"></li>
 					</ul>
 				</div><!-- .container -->
 			</div><!-- .recruitment -->

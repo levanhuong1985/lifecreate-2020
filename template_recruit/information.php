@@ -367,9 +367,9 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 			</div><!-- .container -->
 		</section><!-- .sec-information -->
 		<ul class="list-guide">
-			<li><a href="#"><img src="<?php echo home_url('imgs/common/img_guide_01.jpg');?>" alt="新卒採用募集要項" class="imgfull"><span>新卒採用募集要項</span></a></li>
-			<li><a href="#"><img src="<?php echo home_url('imgs/common/img_guide_02.jpg');?>" alt="中途採用募集要項" class="imgfull"><span>中途採用募集要項</span></a></li>
-			<li><a href="#"><img src="<?php echo home_url('imgs/common/img_guide_03.jpg');?>" alt="アルバイト・パート週末ワーカー募集要項" class="imgfull"><span>アルバイト・パート<br>週末ワーカー<br class="sp-only">募集要項</span></a></li>
+			<li><a href="<?php echo home_url('recruit/information/?s_job=6#type-recruit'); ?>"><img src="<?php echo home_url('imgs/common/img_guide_01.jpg');?>" alt="新卒採用募集要項" class="imgfull"><span>新卒採用募集要項</span></a></li>
+			<li><a href="<?php echo home_url('recruit/information/?s_job=7#type-recruit'); ?>"><img src="<?php echo home_url('imgs/common/img_guide_02.jpg');?>" alt="中途採用募集要項" class="imgfull"><span>中途採用募集要項</span></a></li>
+			<li><a href="<?php echo home_url('recruit/information/?s_job=8#type-recruit'); ?>"><img src="<?php echo home_url('imgs/common/img_guide_03.jpg');?>" alt="アルバイト・パート週末ワーカー募集要項" class="imgfull"><span>アルバイト・パート<br>週末ワーカー<br class="sp-only">募集要項</span></a></li>
 		</ul>
 	</main><!-- #contents -->
 

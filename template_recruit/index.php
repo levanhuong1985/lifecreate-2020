@@ -132,7 +132,7 @@ $youtube_recruit = get_field("youtube_recruit",$config_top->ID);
 							</ul>
 						</div>
 					</div><!-- .howto-item -->
-					<p class="pt30"><a href="#" class="btn02 black"><span>求人募集要項</span><span class="click poppins">CLICK</span></a></p>
+					<p class="pt30"><a href="<?php echo $home_url; ?>/recruit/information" class="btn02 black"><span>求人募集要項</span><span class="click poppins">CLICK</span></a></p>
 				</div><!-- .container -->
 			</div><!-- .howto -->
 		</section><!-- .sec-recruit -->

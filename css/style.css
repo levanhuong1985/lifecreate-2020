@@ -1176,13 +1176,13 @@ a:hover { color: #333; text-decoration: none; }
 	max-width: 50%;
 	padding-right: 20px;
 }
-.recruitment .list-banners li img {
+/*.recruitment .list-banners li img {
 	transition: all ease-in-out 0.5s;
 }
 .recruitment .list-banners li:hover img {
 	transform: scale(0.97);
 	opacity: 0.75;
-}
+}*/
 
 @media screen and (max-width: 1400px){
 	.employeer .info .txt { font-size: 2.5rem; }
