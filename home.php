@@ -81,14 +81,16 @@ $youtube_recruit = get_field("youtube_recruit",$config_top->ID);
 					</ul>
 				</div><!-- .container -->
 			</div><!-- .philosophy -->
+			<?php if(!empty($youtube)){ ?>
 			<div class="greeting">
 				<div class="container">
 					<h3 class="ttl fadeup"><span class="jp">代表あいさつ</span><span class="en poppins">GREETINGS FROM THE PRESIDENT</span></h3>
 					<div class="video fadeup">
-						<?php echo $youtube;?>
+						<?php echo $youtube; ?>
 					</div>
 				</div><!-- .container -->
 			</div><!-- .greeting -->
+					<?php } ?>
 		</section><!-- .sec-about -->
 
 		<section class="sec-business">
@@ -263,7 +265,7 @@ $youtube_recruit = get_field("youtube_recruit",$config_top->ID);
 							    $paged = ( get_query_var( 'paged' ) == 0 ) ? 1 : get_query_var( 'paged' );
 								$args = array( 				
                                     'post_type' => 'news',
-                                    'posts_per_page' => 1,
+                                    'posts_per_page' => 4,
                                     'paged' => 1,
                                     'post_status'   => 'publish',				
                                     'orderby' => 'date',

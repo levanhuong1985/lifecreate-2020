@@ -36,7 +36,7 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 		<section class="sec-information">
 			<div class="container">
 				<h3 class="headline01 fadeup on"><span class="en poppins">JOB INFORMATION LIST</span><span class="jp">求人情報一覧</span></h3>
-				<form name = "search_job" action="<?php echo home_url('recruit/information');?>" method="GET">
+				<form name = "search_job" action="<?php echo home_url('recruit/information#type-recruit');?>" method="GET">
 					<div class="info-block bg-gray mb50">
 						<div class="info-block-inner">
 							<h4 class="ttl">求人を検索！</h4>
@@ -152,7 +152,7 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 
 				</form>
 
-				<div class="type-recruit">
+				<div class="type-recruit" id="type-recruit">
 					<h4 class="ttl01">募集職種</h4>
 					<p class="lead">会社の成長と共に自分自身も成長したい方。<br class="sp-only">一緒に成長しませんか？ライフクリエイトは<br class="sp-only">様々な職種で仲間を募集しています。<br>あなたのスキル・経験に応じて、ご活躍い<br class="sp-only">ただけるポジションを柔軟に検討致します。</p>
 					
@@ -210,6 +210,13 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 									$content 	  = get_the_content();
 									$description  = get_field("description",$post->ID);
 									$code_recruit = get_field("code_recruit",$post->ID);
+
+									$is_show_detail = get_field("is_show_detail",$post->ID);
+									
+									if(!$is_show_detail){
+										$thePostUrl = "javascript:void(0)";
+									}
+
 									?> 
 				
 									<div class="type-recruit-block bg-gray">
@@ -229,7 +236,7 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 										</div>
 										<ul class="btn-job-lists">
 											<li><a href="<?php echo home_url('entry/?code='.$code_recruit); ?>" class="btn02 black"><span>この求人にエントリーする</span><span class="click">CLICK</span></a></li>
-											<li><a href="<?php the_permalink(); ?>" class="btn02 red"><span>求人の詳細情報を見る</span><span class="click">CLICK</span></a></li>
+											<li><a href="<?php echo $thePostUrl; ?>" class="btn02 red"><span>求人の詳細情報を見る</span><span class="click">CLICK</span></a></li>
 										</ul>
 									</div><!-- .type-recruit-block -->
 											<?php
@@ -291,6 +298,11 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 									$content 	  = get_the_content();
 									$description  = get_field("description",$post->ID);
 									$code_recruit = get_field("code_recruit",$post->ID);
+									$is_show_detail = get_field("is_show_detail",$post->ID);
+									
+									if(!$is_show_detail){
+										$thePostUrl = "javascript:void(0)";
+									}
 									
 									
 					?> 
@@ -312,7 +324,7 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 						</div>
 						<ul class="btn-job-lists">
 							<li><a href="<?php echo home_url('entry/?code='.$code_recruit); ?>" class="btn02 black"><span>この求人にエントリーする</span><span class="click">CLICK</span></a></li>
-							<li><a href="<?php the_permalink(); ?>" class="btn02 red"><span>求人の詳細情報を見る</span><span class="click">CLICK</span></a></li>
+							<li><a href="<?php echo $thePostUrl; ?>" class="btn02 red"><span>求人の詳細情報を見る</span><span class="click">CLICK</span></a></li>
 						</ul>
 					</div><!-- .type-recruit-block -->
 							<?php
