@@ -164,6 +164,26 @@ $youtube_recruit = get_field("youtube_recruit",$config_top->ID);
 				<div class="container">
 					<h3 class="ttl fadeup">募集職種</h3>
 					<ul class="list-buttons fadeup">
+					<?php
+							        $s_store = (int)$_GET["s_store"]; 
+									$args = array('hide_empty' => 0, 'parent' => 0);
+									$terms = get_terms('store', $args);
+									if (!empty($terms) && !is_wp_error($terms)) {
+										$no= 1;
+										foreach ($terms as $term) {						
+											
+											$term_link = get_term_link( $term );							
+											$term_id = $term->term_id;
+								?>
+								<li><a href="<?php echo home_url("recruit/information/?s_store=".$term->term_id."#type-recruit");?>" class="btn02 black"><span><?php echo $term->name;?></span><span class="click poppins">CLICK</span></a></li>
+					
+							
+								<?php 
+										$no++;
+										} /* end foreach */
+									} /*end if */ 
+								?>
+						<!--		
 						<li><a href="recruit/information.html" class="btn02 black"><span>幹部候補</span><span class="click poppins">CLICK</span></a></li>
 						<li><a href="recruit/information.html" class="btn02 black"><span>店長・SV(スーパーバイザー)候補</span><span class="click poppins">CLICK</span></a></li>
 						<li><a href="recruit/information.html" class="btn02 black"><span>店舗スタッフ</span><span class="click poppins">CLICK</span></a></li>
@@ -173,6 +193,7 @@ $youtube_recruit = get_field("youtube_recruit",$config_top->ID);
 						<li><a href="recruit/information.html" class="btn02 black"><span>総務・人事・経理</span><span class="click poppins">CLICK</span></a></li>
 						<li><a href="recruit/information.html" class="btn02 black"><span>家電・工具の修理スタッフ</span><span class="click poppins">CLICK</span></a></li>
 						<li><a href="recruit/information.html" class="btn02 black"><span>ライフサポート　作業スタッフ</span><span class="click poppins">CLICK</span></a></li>
+						!-->
 					</ul>
 					<ul class="list-banners">
 						<li class="fadeup"><img src="imgs/top/bnr_01.jpg" alt="募集職種"></li>

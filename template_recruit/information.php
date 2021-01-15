@@ -172,15 +172,17 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 								$args["tax_query"][]= array(
 									'taxonomy' => 'service',
 									'field'     => 'term_id',
-            						'terms'     => array($s_job)
+									'terms'     => array($s_job),
+									'operator' => 'IN',
 								);
 							}
 
 							if($s_type!=0){
 								$args["tax_query"][]= array(
-									'taxonomy' => 'type',
+									'taxonomy' => 'job',
 									'field'     => 'term_id',
-            						'terms'     => array($s_type)
+									'terms'     => array($s_type),
+									'operator' => 'IN',
 								);
 							}
 
@@ -188,9 +190,12 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 								$args["tax_query"][]= array(
 									'taxonomy' => 'store',
 									'field'     => 'term_id',
-            						'terms'     => array($s_store)
+									'terms'     => array($s_store),
+									'operator' => 'IN',
 								);
 							}
+
+							/*printf("<pre>%s</pre>",print_r($args["tax_query"])); */
 
 							$the_query = new WP_Query( $args );
 							if ( $the_query->have_posts() ) 
@@ -209,6 +214,7 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 									$url_img 	  = get_the_post_thumbnail_url($post->ID,'thumb-cruit');	
 									$content 	  = get_the_content();
 									$description  = get_field("description",$post->ID);
+									$job_description = get_field("job_description",$post->ID); 
 									$code_recruit = get_field("code_recruit",$post->ID);
 
 									$is_show_detail = get_field("is_show_detail",$post->ID);
@@ -217,27 +223,58 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 										$thePostUrl = "javascript:void(0)";
 									}
 
+
+
 									?> 
 				
 									<div class="type-recruit-block bg-gray">
-										<p class="ttl02"><small>募集職種</small>幹部候補</p>
+										<p class="ttl02"><small>募集職種</small>
+										<?php
+										if(count($cat_job)>0){ 
+											foreach($cat_job as $item_cat){
+												$term_link = get_term_link( $item_cat ); 
+												
+												echo $item_cat->name;
+												break;
+											}
+										} 
+										?></p>
 										<dl class="description">
 											<dt>仕事内容</dt>
-											<dd>会社の成長と共に自分自身も成長したい方。一緒に成長しませんか？ライフクリエイトは様々な職種で仲間を募集しています。<br>あなたのスキル・経験に応じて、ご活躍いただけるポジションを柔軟に検討致します。</dd>
+											<dd><?php echo $job_description; ?></dd>
 										</dl>
-										<div class="type-recruit-item">
-												<?php if($url_img) { ?>
-														<figure class="img"><img class="imgfull" src="<?php echo $url_img;?>" alt="<?php echo strip_tags($post->post_title); ?>"></figure>					
-												<?php } ?>
-												<div class="info">
-												<p class="ttl03"><?php echo $post->post_title; ?></p>
-												<p><?php echo $description;?></p>
-											</div>
-										</div>
+										<?php
+										if(count($cat_store)>0){ 
+											foreach($cat_store as $item_cat){
+
+												$term_link = get_term_link( $item_cat ); 
+												$url_img_cat = get_field('image_store', $item_cat);
+												
+												
+                                                ?>
+												 	<div class="type-recruit-item">
+														<?php if($url_img_cat["sizes"]["thumbnail"]) { ?>
+																	<figure class="img"><img class="imgfull" src="<?php echo $url_img_cat["sizes"]["thumbnail"];?>" alt="<?php echo strip_tags( $item_cat->name); ?>"></figure>					
+															<?php } ?>
+															<div class="info">
+															<p class="ttl03"><?php echo $item_cat->name; ?></p>
+															<p><?php echo $item_cat->description;?></p>
+														</div>
+													</div>
+												<?php
+
+												break;
+											}
+										} 
+										?>
+										
+
+										<?php if($is_show_detail){ ?>
 										<ul class="btn-job-lists">
 											<li><a href="<?php echo home_url('entry/?code='.$code_recruit); ?>" class="btn02 black"><span>この求人にエントリーする</span><span class="click">CLICK</span></a></li>
 											<li><a href="<?php echo $thePostUrl; ?>" class="btn02 red"><span>求人の詳細情報を見る</span><span class="click">CLICK</span></a></li>
 										</ul>
+										<?php } ?>
 									</div><!-- .type-recruit-block -->
 											<?php
 											} /* end while */
@@ -299,6 +336,7 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 									$description  = get_field("description",$post->ID);
 									$code_recruit = get_field("code_recruit",$post->ID);
 									$is_show_detail = get_field("is_show_detail",$post->ID);
+									$job_description = get_field("job_description",$post->ID); 
 									
 									if(!$is_show_detail){
 										$thePostUrl = "javascript:void(0)";
@@ -308,24 +346,55 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 					?> 
 				
 					<div class="type-recruit-block bg-gray">
-						<p class="ttl02"><small>募集職種</small>幹部候補</p>
+						<p class="ttl02"><small>募集職種</small>
+						<?php
+										if(count($cat_job)>0){ 
+											foreach($cat_job as $item_cat){
+												$term_link = get_term_link( $item_cat ); 
+												
+												echo $item_cat->name;
+												break;
+											}
+										} 
+										?></p>
 						<dl class="description">
 							<dt>仕事内容</dt>
-							<dd>会社の成長と共に自分自身も成長したい方。一緒に成長しませんか？ライフクリエイトは様々な職種で仲間を募集しています。<br>あなたのスキル・経験に応じて、ご活躍いただけるポジションを柔軟に検討致します。</dd>
+							<dd><?php echo $job_description; ?></dd>
 						</dl>
-						<div class="type-recruit-item">
-								<?php if($url_img) { ?>
-										<figure class="img"><img class="imgfull" src="<?php echo $url_img;?>" alt="<?php echo strip_tags($post->post_title); ?>"></figure>					
-								<?php } ?>
-								<div class="info">
-								<p class="ttl03"><?php echo $post->post_title; ?></p>
-								<p><?php echo $description;?></p>
-							</div>
-						</div>
+
+						<?php
+							if(count($cat_store)>0){ 
+								foreach($cat_store as $item_cat){
+									$term_link = get_term_link( $item_cat ); 
+									$url_img_cat = get_field('image_store', $item_cat);
+									
+												/*print_r($url_img_cat);*/		
+									
+									?>
+										<div class="type-recruit-item">
+										<?php if($url_img_cat["sizes"]["thumbnail"]) { ?>
+													<figure class="img"><img class="imgfull" src="<?php echo $url_img_cat["sizes"]["thumbnail"];?>" alt="<?php echo strip_tags( $item_cat->name); ?>"></figure>					
+											<?php } ?>
+											<div class="info">
+											<p class="ttl03"><?php echo $item_cat->name; ?></p>
+											<p><?php echo $item_cat->description;?></p>
+										</div>
+									</div>
+									<?php
+
+									break;
+								}
+							} 
+							?>
+
+						
+
+						<?php if($is_show_detail){ ?>
 						<ul class="btn-job-lists">
 							<li><a href="<?php echo home_url('entry/?code='.$code_recruit); ?>" class="btn02 black"><span>この求人にエントリーする</span><span class="click">CLICK</span></a></li>
 							<li><a href="<?php echo $thePostUrl; ?>" class="btn02 red"><span>求人の詳細情報を見る</span><span class="click">CLICK</span></a></li>
 						</ul>
+						<?php } ?>
 					</div><!-- .type-recruit-block -->
 							<?php
 							} /* end while */

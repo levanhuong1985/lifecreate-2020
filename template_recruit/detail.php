@@ -68,7 +68,7 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 							
 
 				?>	
-
+                <?php if(!empty($youtube_recruit)) { ?> 
 				<div class="introduce">
 					<div class="box fadeup">
 					<?php		
@@ -85,6 +85,7 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 					</div>
 					<div class="video fadeup"><?php echo $youtube_recruit;?></div>
 				</div><!-- .introduce -->
+				<?php } ?>
 				<div class="detail bg-gray">
 					<div class="detail-inner">
 					<?php		
@@ -161,7 +162,7 @@ if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly
 								</tr>
 								<tr>
 									<th class="red">備考</th>
-									<td><span class="remark poppins"><?php echo $remarks;?></span></td>
+									<td><?php echo $remarks;?><!--<span class="remark poppins"></span>!--></td>
 								</tr>
 								<tr>
 									<th class="red">勤務時間</th>
